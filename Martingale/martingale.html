@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Martingale</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <a><img src="https://see.fontimg.com/api/renderfont4/BWBVw/eyJyIjoiZnMiLCJoIjo1NCwidyI6MTAwMCwiZnMiOjU0LCJmZ2MiOiIjMENGRjAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TWFydGluZ2FsZQ/antimatrix.png"></a>
+    </div>
+    
+    <section class="sectionBorder">
+            <section>
+                <br><br><br>
+                <p class="text1">
+                    Suponha o experimento de jogar uma moeda e observar a face de cima. A tabela abaixo mostra o numero de lançamentos, o numero de coroas e a frequencia relativa de coroas.
+                </p>
+                <br>
+                <table>
+                    <tr>
+                        <th>Nº de lançamentos</th>
+                        <th>Nº de coroas</th>
+                        <th>Frequencia relativa</th>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td id="coroas1"></td>
+                        <td id="fr1"></td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td id="coroas2"></td>
+                        <td id="fr2"></td>
+                    </tr>
+                    <tr>
+                        <td>1.000</td>
+                        <td id="coroas3"></td>
+                        <td id="fr3"></td>
+                    </tr>
+                    <tr>
+                        <td>10.000</td>
+                        <td id="coroas4"></td>
+                        <td id="fr4"></td>
+                    </tr>
+                    <tr>
+                        <td>20.000</td>
+                        <td id="coroas5"></td>
+                        <td id="fr5"></td>
+                    </tr>
+                    <tr>
+                        <td>50.000</td>
+                        <td id="coroas6"></td>
+                        <td id="fr6"></td>
+                    </tr>
+                    <tr>
+                        <td>100.000</td>
+                        <td id="coroas7"></td>
+                        <td id="fr7"></td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <button class="button1" id="run"><strong> Run </strong></button>
+                </div>
+                <br><br><br>
+                <p class="text1">Quando um experimento, como o lançamento de uma moeda, é repetido várias vezes, a frequência relativa de um determinado resultado (por exemplo, obter "coroa") se aproxima da probabilidade teórica desse resultado. Se a moeda for justa, a probabilidade teórica de obter "coroa" é de 0,5 (ou 50%).
+
+                    A frequência relativa é calculada dividindo o número de vezes que um resultado específico ocorre pelo número total de repetições do experimento. Portanto, se você lançar a moeda n vezes e obtiver o resultado "coroa" M vezes, a frequência relativa de "coroa" é M/n. Quanto maior o valor de n (o número de lançamentos), mais a frequência relativa se aproximará da probabilidade teórica (0,5 ou 50% no caso de uma moeda justa).
+                </p>
+            </section>
+            <section>
+                <br><br>
+                <p class="text1">
+                    <br><br><br><br>
+                    Sabendo disso, podemos aplicar a estratégia Martingale em um jogo de apostas justo, no qual teoricamente existem 50% de chances de ganhar.
+                    A estratégia Martingale é simples: você deve dobrar sua aposta cada vez que perde e continuar apostando <strong>na mesma opção</strong>. Eventualmente, o dinheiro perdido será recuperado, e você terá um lucro igual à aposta original.
+                    <br>
+                    <p class="text1">
+                        <br>
+                        <strong>Por exemplo:</strong>
+                        <br>
+                        Vamos supor um jogo de coinflip com uma moeda justa, onde as chances de ganhar ou perder são de 50%, e a vitória resulta em receber o dobro do valor apostado.
+                    </p>
+                        <br><br>
+                        <ol>
+                            <li>Você aposta R$ 1 em coroa e perde.</li>
+                            <li>Você dobra a sua aposta para R$ 2 e aposta em coroa novamente e perde.</li>
+                            <li>Você dobra novamente para R$ 4 e aposta em coroa e ganha.</li>
+                        </ol>
+                        <br><br>
+                <p class="text1">
+                    Neste cenário você recuperou suas perdas anteriores e o seu lucro foi de R$ 1. 
+                    Se você tivesse começado apostando R$ 5, seu lucro seria maior, mas você teria que ter mais dinheiro para lidar com os riscos.
+                    As perdas podem se acumular rapidamente, e é possível ficar sem dinheiro antes de ganhar mas com um pouco de matemática podemos definir uma quantia segura para começar as apostas.
+                </p>
+                <br><br>
+            </section>
+    </section>
+    <img src="assets/images/gettingmoney.jpeg" width="55%" class="container">
+    
+<script src="assets/js/script.js"></script>
+</body>
+</html>
