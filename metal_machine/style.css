@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    background-color: #000000;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/1c6da5ed-ee75-4954-9d10-5dd9cceb4837/dc3jlbu-e65d60ab-2ec6-48be-b029-a93ca0163d36.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+@font-face {
+    font-family: 'MetalLord';
+    src: url('MetalLord.ttf') format('truetype');
+}
+
+h2{
+    font-family: 'MetalLord', serif;
+    font-size: 50px;
+    color: #1a0000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(255, 0, 0, 0.8);
+    white-space: nowrap;
+    display: block;
+}
+
+.container {
+    background-color: #3a3a3a;
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 350px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.8);;
+    width: 600px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.stop {
+    width: 100%;
+    background-color: #ccc;
+    color: black;
+}

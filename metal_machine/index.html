@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="PlayIcon.png" alt="Play" class="icon">
+            <h2>METAL MACHINE</h2>
+        </div>
+        <div class="buttons">
+            <button onclick="playAudio('audio1')">(A) Audio01</button>
+            <button onclick="playAudio('audio2')">(B) Audio02</button>
+            <button onclick="playAudio('audio3')">(C) Audio03</button>
+            <button onclick="playAudio('audio4')">(1) Audio04</button>
+        </div>
+        <button class="stop" onclick="stopAllAudios()">Stop / All</button>
+    </div>
+
+    <audio id="audio1" src="audio1.mp3"></audio>
+    <audio id="audio2" src="audio2.mp3"></audio>
+    <audio id="audio3" src="audio3.mp3"></audio>
+    <audio id="audio4" src="audio4.mp3"></audio>
+</body>
+
+</html>
